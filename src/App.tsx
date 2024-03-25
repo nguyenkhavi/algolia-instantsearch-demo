@@ -100,7 +100,9 @@ function Hit({ hit }: HitProps) {
         <h1>
           <Highlight attribute="productName" hit={hit} />
         </h1>
-        <p>#{hit.productCode}</p>
+        <p>
+          #{hit.productCode} ({hit.partner})
+        </p>
         <p>
           <Highlight attribute="description" hit={hit} />
         </p>
